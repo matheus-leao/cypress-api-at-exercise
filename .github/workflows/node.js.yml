@@ -27,6 +27,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npx cypress run
-      name: RunCypressTests
+    
+    - name: RunCypressTests
+      uses: cypress-io/github-action@v4.x.x # use the explicit version number
+      with:
+        record: true
+      env:
+            # pass GitHub token to detect new build vs re-run build
+        GITHUB_TOKEN: ${{secrets.CYPRESSTOKEN}}
     

@@ -153,7 +153,9 @@
     "cypress": "^10.10.0"
   },
   "scripts": {
-    "OpenCypress": "npx cypress open"
+    "OpenCypress": "npx cypress open",
+    "RunCypress": "npx cypress run",
+    "RunTestsAndGenerateReport": "npx cypress run --record --key CYPRESSTOKEN"
   },
   "repository": {
     "type": "git",
