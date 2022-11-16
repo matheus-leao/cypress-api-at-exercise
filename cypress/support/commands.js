@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('AssertModel', (response) => { 
+    expect(response).to.have.property('body');
+    expect(response).to.have.property('duration');
+    expect(response).to.have.property('headers');
+})
