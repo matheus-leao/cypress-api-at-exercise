@@ -1,5 +1,5 @@
 describe('Product Tests', () => {
-  it('Get Products', () => {
+  it('Get All Products', () => {
     cy.request({
       url: '/productsList'
     }).then((response) => {
@@ -51,13 +51,14 @@ describe('Product Tests', () => {
     cy.request({
       url: 'searchProduct',
       method: 'POST',
+      form: true,
       body: {
-        search_product : 'jean'
-      },
+        search_product : 'jean',
+      }
     }).then((response) => {
+      console.log(response)
       cy.AssertModel(response);
-      //warning: Come back hear to improve this assertion
-      expect(response.body, { "responseBody" : 200});
+      expect(response.body).contains('"responseCode": 200');
     })
   });
 
