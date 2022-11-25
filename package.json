@@ -41,6 +41,7 @@
     "commander": "^5.1.0",
     "concat-map": "^0.0.1",
     "core-util-is": "^1.0.2",
+    "cypress-plugin-api": "^2.6.0",
     "dashdash": "^1.14.1",
     "debug": "^4.3.4",
     "delayed-stream": "^1.0.0",

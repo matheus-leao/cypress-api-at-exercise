@@ -5,6 +5,9 @@ module.exports = defineConfig({
   e2e: {
       baseUrl: 'https://automationexercise.com/api',
     },
+    env: {
+      requestMode: true
+    }
   },
 );
 
