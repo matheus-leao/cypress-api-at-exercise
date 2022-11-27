@@ -30,3 +30,42 @@ Cypress.Commands.add('AssertModel', (response) => {
     expect(response).to.have.property('duration');
     expect(response).to.have.property('headers');
 })
+
+Cypress.Commands.add('getRequest', (path) => {
+    const options = {
+        method: 'GET',
+        url: path
+    };
+
+    return cy.request(options).then((response) => {})
+})
+
+Cypress.Commands.add('postRequest', (path, body) => {
+    const options = {
+        method: 'POST',
+        url: path,
+        form: true,
+        body: body
+    };
+
+    return cy.request(options).then((response) => {})
+})
+
+Cypress.Commands.add('putRequest', (path, body) => {
+    const options = {
+        method: 'PUT',
+        url: path,
+        body: body
+    };
+
+    return cy.request(options).then((response) => {})
+})
+
+Cypress.Commands.add('deleteRequest', (path) => {
+    const options = {
+        method: 'DELETE',
+        url: path
+    };
+
+    return cy.request(options).then((response) => {})
+})

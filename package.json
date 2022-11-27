@@ -151,7 +151,7 @@
     "yauzl": "^2.10.0"
   },
   "devDependencies": {
-    "cypress": "^10.10.0"
+    "cypress": "^11.2.0"
   },
   "scripts": {
     "OpenCypress": "npx cypress open",
