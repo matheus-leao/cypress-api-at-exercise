@@ -122,7 +122,7 @@
     "rxjs": "^7.5.7",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
-    "semver": "^7.3.8",
+    "semver": "^7.5.2",
     "shebang-command": "^2.0.0",
     "shebang-regex": "^3.0.0",
     "signal-exit": "^3.0.7",
